@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Ime na recept",
+        "source": "Poteklo na recept",
+        "listaNaSostojki": ["jajca","brasno", "voda"]
+    },
+    {
+        "name": "Burek",
+        "source": "Turcija",
+        "listaNaSostojki": ["meso","brasno", "voda"]
+    }
+]
