@@ -1,1 +1,1 @@
-let sayHi = () => {console.log('HI!')}
+let sayHin = () => {console.log('HI!')}
