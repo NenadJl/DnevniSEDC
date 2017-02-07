@@ -1,0 +1,44 @@
+[
+    {
+        "name": "",
+        "source": "",
+        "ingredientsList": {
+            "flour": "12",
+            "milk": "1",
+            "oil": "",
+            "salt": "34 grama",
+            "sugar": "",
+            "eggs": "",
+            "tomatoes": "",
+            "pepper": ""
+        }
+    },
+    {
+        "name": "",
+        "source": "",
+        "ingredientsList": {
+            "flour": "8",
+            "milk": "",
+            "oil": "10",
+            "salt": "34 grama",
+            "sugar": "",
+            "eggs": "",
+            "tomatoes": "",
+            "pepper": ""
+        }
+    },
+    {
+        "name": "MUSAKA",
+        "source": "Romanija",
+        "ingredientsList": {
+            "flour": "3",
+            "milk": "25l",
+            "oil": "5",
+            "salt": "34 grama",
+            "sugar": "",
+            "eggs": "",
+            "tomatoes": "",
+            "pepper": ""
+        }
+    }
+]

@@ -1,12 +1,14 @@
-[
-    {
-        "name": "Ime na recept",
-        "source": "Poteklo na recept",
-        "listaNaSostojki": ["jajca","brasno", "voda"]
-    },
-    {
-        "name": "Burek",
-        "source": "Turcija",
-        "listaNaSostojki": ["meso","brasno", "voda"]
+{
+    "name": "Svarcvald",
+    "source": "Austria",
+    "ingredientsList": {
+        "flour": "0.5 kg",
+        "milk": "0.5 l",
+        "oil": "0.3 l",
+        "salt": null,
+        "sugar": "",
+        "eggs": "",
+        "tomatoes": "",
+        "pepper": ""
     }
-]
+}
