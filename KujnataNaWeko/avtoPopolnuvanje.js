@@ -3,27 +3,50 @@ let vneseniRecepti = [];
 $(() => {
     let $ingridients = $('#ingredients');
     let $addNewIngridient = $('#addNewIngridient');
+
+    let $ingridientsTwo = $('#ingredientsTwo');
+
+    let $btnAddNewaddNewIngridientTwo = $('#addNewIngridientTwo');
+
+    let $ddlSelectIng = $('#selectIngredientTwo');
+
     let $addRecipe = $('#newRecipe')
     let allIngridients = ['Brasno', 'Mleko', 'Sol', 'Seker', 'Jajca', 'Domati', 'Piperki', 'Sirenje', 'Kaskaval'];
+
+    // od ovaa linija na dole stavame event liseneri
+
+    $ddlSelectIng.on('click', ()=>{
+
+    })
+
+    $btnAddNewaddNewIngridientTwo.on('click', () => {
+        
+        allIngridients.forEach()
+
+        $ingridientsTwo.append(
+            `<li>${sostojka} i ${kolicina}</li>`
+        )
+    })
 
     $addNewIngridient.on('click', () => {
 
         let $select = $("<select class='ingridientName'>");
         let selectedIngridients = [];
+
         $('select').each((x, y) => {
             selectedIngridients.push($(y).val())
         })
 
-        if(selectedIngridients.length < allIngridients.length)
+        if (selectedIngridients.length < allIngridients.length)
             $select.appendTo($ingridients);
 
         allIngridients.forEach((s) => {
-            
+
             let $option = $(`<option value='${s}'>`);
             $option.html(s);
-            
+
             for (let i = 0; i < allIngridients.length; i++) {
-                if (!~selectedIngridients.indexOf(s)){
+                if (!~selectedIngridients.indexOf(s)) {
                     $option.appendTo($select);
                 }
             }
