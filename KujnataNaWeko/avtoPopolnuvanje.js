@@ -4,18 +4,43 @@ $(() => {
     let $ingridients = $('#ingredients');
     let $addNewIngridient = $('#addNewIngridient');
     let $addRecipe = $('#newRecipe')
+    let allIngridients = ['Brasno', 'Mleko', 'Sol', 'Seker', 'Jajca', 'Domati', 'Piperki', 'Sirenje', 'Kaskaval'];
 
     $addNewIngridient.on('click', () => {
-        $ingridients.append(`
-            <li>
-                <select class="ingridientName">
-                    <option value="jajca">Jajca</option>
-                    <option value="mleko">Melko</option>
-                    <option value="brasno">Brasno</option>
-                </select>
-                <input type="text" class="ingridient">
-            </li>
-        `)
+
+        let $select = $("<select class='ingridientName'>");
+        let selectedIngridients = [];
+        $('select').each((x, y) => {
+            selectedIngridients.push($(y).val())
+        })
+
+        if(selectedIngridients.length < allIngridients.length)
+            $select.appendTo($ingridients);
+
+        allIngridients.forEach((s) => {
+            
+            let $option = $(`<option value='${s}'>`);
+            $option.html(s);
+            
+            for (let i = 0; i < allIngridients.length; i++) {
+                if (!~selectedIngridients.indexOf(s)){
+                    $option.appendTo($select);
+                }
+            }
+
+        })
+
+
+        // $ingridients.append(`
+        //     <li>
+        //         <select class="ingridientName">
+        //             <option value="jajca">Jajca</option>
+        //             <option value="mleko">Melko</option>
+        //             <option value="brasno">Brasno</option>
+        //         </select>
+        //         <input type="text" class="ingridient">
+        //     </li>
+        // `)
     })
 
     $addRecipe.on('click', () => {
